@@ -1,10 +1,10 @@
 
 <html>
   <head>
-    <title>Hilary Egan</title>
+    <title>Rebecca Nevin</title>
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
-    <link rel="stylesheet" type="text/css" href="css/hilary.css">
+    <link rel="stylesheet" type="text/css" href="css/becky.css">
     <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 <script type="text/javascript" language="JavaScript">
 <!--
@@ -24,7 +24,7 @@ function printImage() {
   <body>
     <div class="container">
       <div class="column span-24 first last">
-	<h1>Hilary Egan</h1>
+	<h1>Rebecca Nevin</h1>
       </div>
       <hr>
     </div>
@@ -42,18 +42,24 @@ function printImage() {
       </div>
       <div class="span-13">
 
-  <p><b>Star-Planet Interactions</b> 
-  Stars and planets interact in a variety of exciting and dynamic ways. Stars provide a crucial source of energy input to planets the form of both light and mechanical energy in the form of ionized stellar winds. This can heat the planet, ionize the upper atmosphere, irradiate the surface, and erode a planetary atmospher. These effects depend on the properties of the star as well as the properties of the planet.
+  <p><b>Galaxy Evolution</b> 
+    This field of astronomy is really exciting because we are still looking for answers. While we know that galaxies grow and evolve over time, it is not totally clear which processes are driving different types of evolution. 
   <p>
-  I am interested in both the effects of a star on a planet as well as the coupling of the planet back to the star. 
+I approach this problem from a unique perspective that joins simulations of galaxy mergers with observations. I work with Laura Blecha at the University of Florida to create a beautiful simulation suite of merging galaxies using the SUNRISE simulations. From these simulations, I create mock observations to match [insert your favorite galaxy survey], and from these mock images and kinematic maps, I have developed a galaxy merger classification tool that learns to classify galaxies as various types of mergers. 
+
+<p> 
+I am currently developing this tool for use on the Mapping Nearby Galaxies at Apache Point (MaNGA) survey, which is an optical survey of 10,000 galaxies. They call it the survey for people who love galaxies for a reason! With this large statistical sample of galaxies, I plan to create samples of real galaxies in different stages of merging in order to build a more cohesive picture about if, when, and how galaxy mergers drive galaxy evolution.
   
 <img src="images/spi.jpg" width=500>
   <hr>
-  <p><b>Atmospheric Escape and Evolution</b> 
+  <p><b>Active Galactic Nuclei</b> 
 
-  Planetary atmospheres play an important role in habitability and climate evolution, but are not necessarily stable over billions of years. Mars is thought to once have had atmosphere and liquid surface water, but is now a dry planet with very little atmosphere left. Venus may once have been a more Earth-like planet that boiled away all of its water due to a runaway greenhouse effect. Even Earth loses atmosphere through its polar regions due to the interaction of the magnetic field with the solar wind. A variety of planetary processes impact the longterm evolution of a planet (sequestration, outgassing), but I am primarily interested in loss to space.
+    Supermassive black holes are one of the biggest paradoxes in the universe - not only are they one of the darkest places, but the region around them can shine bright as a quasar. Supermassive black holes that are actively accreting gas, which powers this energetic phenomenon across the electromagnetic spectrum, are known as active galactic nuclei, or AGN.
   <p>
-  Atmospheric loss processes take a variety of forms, but in general a particle escapes when it has energy that exceeds the escape velocity of the planet near the top of the atmosphere. In thermal loss processes this energy source is from inherent thermal motion, whereas in ion escape this energy comes from the interaction of the charged particles with electric fields.  These processes can be observed at solar system bodies (Earth, Mars, Venus, Titan), modeled, and applied to exoplanets.
+ I focus on the kinematics of AGN, focusing on the powerful biconical outflows they can drive from their central regions. These outflows have the potential to impact their host galaxies (SMBHs live in the centers of galaxies), so I focus on modeling their energetics using an analytical MCMC approach. This technique has the advantage of providing a posterior probability of the parameters of the bicone, meaning that I can constrain both the geometry and the energetics of these AGN-driven outflows based on their optical emission lines.
+
+<p>
+I spend a good amount of time fitting Gaussians.
 
 
   <p>
@@ -61,40 +67,14 @@ function printImage() {
   <p>
   <hr>
 
-  <p><b>Connecting Simulations and Observations</b> 
-  As simulations get larger and more sophisticated, it is increasingly important to pay attention to the techniques used to connect the results back to observations. I enjoy thinking about novel ways to compare simulations and observations, make predictions, and ground models in reality. 
+  <p><b>Machine Learning with Astronomy</b> 
+  As data gets larger and more sophisticated, it is increasingly important to pay attention to the techniques used to carry out the scientific analysis. It is truly a curse of too much data at times, and some of the aspects of the data often go unused just because the data is unwieldly, or it is initially difficult to visualize. I enjoy thinking about novel ways to get more bang for our buck. I particularly like to harness various machine learning techniques to do science, which often involves developing tools that push machine learning to become more scientific (i.e., with error analysis built in or with in depth discussion of the physical implications of the results)
+
 <p>
 
 
   <img src="images/model_flythrough.png" width=500>
 <p>
- Above: Flythrough of model results of the inbound and outbound portions of the orbit (#2349, 14 December 2015) excluding periapsis with corresponding MAVEN data. <i>Via "Comparison of Global Martian Plasma Models in the Context of MAVEN Observations </i>(<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2017JA025068">Egan et al. 2018</a>).
-  <p>
-  An older project I worked involved characterizing the distribution of matter is large-scale cosmological simulations. Observationally this characterization is accomplished using quasar absorption spectra that probe the interstellar medium along the line of sight, while in simulations we have access to the entire simulation volume.
-  <p>
-   I created a pipeline that generates and fits synthetic quasar absorption spectra using sight lines cast through a cosmological simulation, and simultaneously identifies structure by directly analyzing the variations in H I and O VI number density. This module is available through <a href="http://yt-project.org">volumetric analysis package, yt</a>. We found that the this method traces roughly the same quantities of H I and O VI above observable column density limits, but the synthetic spectra typically identify more substructure in absorbers.
-<p>
-   <img src="images/absorption_spectra.png" width=500>
-<p>
-An example absorption spectrum and methods of identifying structures in the intergalactic medium from a cosmological simulation. <i> Via  "Bringing Simulation and Observation Together to Better Understand the Intergalactic Medium"</i> ( <a href="http://adsabs.harvard.edu/abs/2014ApJ...791...64E">Egan et al. 2014</a>)
-  <p>
-
-  <hr>
-
-  <p><b>High Performance Scientific Computing and Visualization</b> 
-
-  <hr>
-  <p><b>Machine Learning</b> 
-
-  Through the DOE Computational Science Graduate Fellowship I had the opprotunity to spend a semester at the National Renewable Energy Lab (NREL), expanding the breadth of my PhD research. I took the oppotunity to work on a project outside of astrophysics in order to learn to use machine learning techniques that I hope to bring to my main research focus in the future. 
-  <p>
-  HPC centers are designed to perform at maximum computational efficiency at all times, regardless of the energy needs of the rest of the building. This is a sub- optimal design, as not all jobs consume power equally and the energy load of a building can vary drastically throughout the day. I used data collected from NREL’s super-computing system, Peregrine, to characterize jobs and assess the feasibility of power-constrained scheduling.
-  <p>
-  Every 10 seconds each node in the system is queried and current power consumption is recorded. This data is then cross correlated with a complete record of job submission scripts, start times, and end times. From each job’s power time series, a variety of descriptive metrics were calculated and were used for the remainder of the analysis. I used ML techniques to cluster jobs across a variety of application types and predict mean power use for every job, broken down by application. Using these predicted power metrics I developed a job secheduler that attempts to cap the peak power use of the total system.
-  <p>
-  <img src="images/app_pca.png" width=500>
-  <p>
-  Clustering jobs using a single applications (Vasp, Fluent, Python, Amber) into different types based on derived power use metrics (amplitude, period, range, mean) via principle component analysis. This works well for some programs (e.g. Amber) but poorly for others (e.g. Vasp) Related Paper: <i><a href="http://onlinelibrary.wiley.com/doi/10.1002/sam.11339/abstract">Prediction and characterization of application power use in a high-performance computing environment</a></i>
 
     <hr>
 
