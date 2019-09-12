@@ -49,8 +49,8 @@ I approach this problem from a unique perspective that joins simulations of gala
 
 <p> 
 I am currently developing this tool for use on the Mapping Nearby Galaxies at Apache Point (MaNGA) survey, which is an optical survey of 10,000 galaxies. They call it the survey for people who love galaxies for a reason! With this large statistical sample of galaxies, I plan to create samples of real galaxies in different stages of merging in order to build a more cohesive picture about if, when, and how galaxy mergers drive galaxy evolution.
-  
-<img src="images/spi.jpg" width=500>
+  <p> Below, I am showing some mock observations (imaging and stellar kinematics) that I have created from the SUNRISE simulated galaxy merger. The machine learning classification tool relies upon parametric and non-parametric 'predictors', which I extract from the images and kinematic maps of the merger to assign a given galaxy a probability of being in a merger.
+<img src="files/animated_fg3_m12_viewpt_3.gif" width=500>
   <hr>
   <p><b>Active Galactic Nuclei</b> 
 
@@ -59,11 +59,25 @@ I am currently developing this tool for use on the Mapping Nearby Galaxies at Ap
  I focus on the kinematics of AGN, focusing on the powerful biconical outflows they can drive from their central regions. These outflows have the potential to impact their host galaxies (SMBHs live in the centers of galaxies), so I focus on modeling their energetics using an analytical MCMC approach. This technique has the advantage of providing a posterior probability of the parameters of the bicone, meaning that I can constrain both the geometry and the energetics of these AGN-driven outflows based on their optical emission lines.
 
 <p>
-I spend a good amount of time fitting Gaussians.
+I have measured the energetics of 18 AGN-driven outflows and I find that 
+
+<p>
+I also spend a good amount of time fitting Gaussians to kinematics.
+
+<p><b>Case Studies of Fascinating Galaxies</b>
+  Sometimes I like to work with individual galaxies. These objects are really interesting for a number of reasons; many of them have complicated interconnections between AGN-driven outflows and star formation.
+
+<p> For instance, <a href="https://arxiv.org/abs/1710.00825">'J1354' is interesting because it has an example of an AGN turning on and off, powering an outflow first in the south and then one in the north.</a>
 
 
+<p>
+  <img src="files/J1354.jpg" width=500>
   <p>
-  <img src="images/mars_climate.png" width=500>
+  <hr>
+
+<p> <a href="https://www.nature.com/articles/s41586-018-0033-2"> NGC6240 has it all.</a> It is a confirmed dual AGN and also hosts a star-formation driven outflow in addition to an AGN-driven outflow. The energy budget of both are required to shut down star formation.
+<p>
+  <img src="files/NGC6240.png" width=500>
   <p>
   <hr>
 
