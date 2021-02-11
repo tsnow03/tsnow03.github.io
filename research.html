@@ -52,8 +52,15 @@ One way to study mergers is through detailed isolated merger simulations that al
 <p>
 From these simulations, I create mock observations to match [insert your favorite galaxy survey]. Here, I'm showing mock SDSS r-band images and mock MaNGA stellar kinematic maps:
 
-From these mock images and kinematic maps, I have developed a galaxy merger classification tool that learns to identify various different types of galaxy mergers. The statistical learning classification tool relies upon parametric and non-parametric 'predictors', which I extract from the images and kinematic maps of the merger to assign a given galaxy a probability of being in a merger. <a href="https://arxiv.org/abs/1901.01975">This is my paper on the imaging side of the approach,</a> and <a href="https://arxiv.org/abs/2102.02208"> this is my paper on the stellar kinematic side of the approach.</a>
+
 <img src="files/website_mock.png" width=500 class="center">
+From these mock images and kinematic maps, I have developed a galaxy merger classification tool that learns to identify various different ty\
+pes of galaxy mergers. The statistical learning classification tool relies upon parametric and non-parametric 'predictors', which I extract \
+from the images and kinematic maps of the merger to assign a given galaxy a probability of being in a merger. This is my paper on the imagin\
+g side of the approach: <a href="https://arxiv.org/abs/1901.01975">Nevin+2019</a>, and this is my paper on the stellar kinematic side of the \
+approach: <a href="https://arxiv.org/abs/2102.02208">Nevin+2021</a>
+
+
   <hr>
   <p><b>Active Galactic Nuclei: The motions of energetic gas</b> 
 <p>
@@ -64,18 +71,19 @@ From these mock images and kinematic maps, I have developed a galaxy merger clas
 <img src="files/bicones.png" width=500>
 
 <p>
-<a href="https://arxiv.org/abs/1710.00828">I have measured the energetics of 18 AGN-driven outflows and I find that these moderate-luminosity AGN drive powerful outflows (below).</a> This is exciting because moderate-luminosity AGN are more common than their more energetic cousins, the quasars, so they have more potential to impact the formation of stars in the universe. I also find that the host galaxies of the AGN-driven outflows tend to be redder with lower star formation rates; additionally, since these outflows have wide opening angles, they intersect the ISM of their host galaxies, which is a way for them to deliver energy to star forming regions.
+I have measured the energetics of 18 AGN-driven outflows (<a href="https://arxiv.org/abs/1710.00828" Nevin+2018</a>) and I find that these moderate-luminosity AGN drive powerful outflows (below). This is exciting because moderate-luminosity AGN are more common than their more energetic cousins, the quasars, so they have more potential to impact the formation of stars in the universe. I also find that the host galaxies of the AGN-driven outflows tend to be redder with lower star formation rates; additionally, since these outflows have wide opening angles, they intersect the ISM of their host galaxies, which is a way for them to deliver energy to star forming regions.
 
 <img src="files/Lbol.png" width=500>
 
 
 <p>
-I also spend a good amount of time fitting Gaussians to emission lines both to perform emission line diagnostics, such as BPT diagrams and to constrain the kinematic origin of various emission line features. <a href="https://arxiv.org/abs/1609.04018"> I created a kinematic classification for double-peaked AGN and proved that the majority were associated with outflow-dominated kinematics.</a>
+I also spend a good amount of time fitting Gaussians to emission lines both to perform emission line diagnostics, such as BPT diagrams and to constrain the kinematic origin of various emission line features. I created a kinematic classification for double-peaked AGN and proved that the majority were associated with outflow-dominated kinematics (<a href="https://arxiv.org/abs/1609.04018" Nevin+2016</a>).
 
 <p>
 <hr>
 <b>Case studies: Focusing on fascinating galaxies and AGN</b>
-  Sometimes I like to work with individual galaxies. These objects are really interesting for a number of reasons; many of them have complicated interconnections between AGN-driven outflows and star formation.
+<p>  
+Sometimes I like to work with individual galaxies. These objects are really interesting for a number of reasons; many of them have complicated interconnections between AGN-driven outflows and star formation.
 
 <p> For instance, <a href="https://arxiv.org/abs/1710.00825">'J1354' is interesting because it has an example of an AGN turning on and off, powering an outflow first in the south and then one in the north.</a>
 
@@ -91,7 +99,8 @@ I also spend a good amount of time fitting Gaussians to emission lines both to p
   <hr>
 
   <p><b>Machine learning: Exciting applications with astrophysical questions</b> 
-  As data gets larger and more sophisticated, it is increasingly important to pay attention to the techniques used to carry out the scientific analysis. It is truly a curse of too much data at times, and some of the aspects of the data often go unused just because the data is unwieldly, or it is initially difficult to visualize. I enjoy thinking about novel ways to get more bang for our buck. I particularly like to harness various machine learning techniques to do science, which often involves developing tools that push machine learning to become more scientific (i.e., with error analysis built in or with in depth discussion of the physical implications of the results).
+<p>  
+As data gets larger and more sophisticated, it is increasingly important to pay attention to the techniques used to carry out the scientific analysis. It is truly a curse of too much data at times, and some of the aspects of the data often go unused just because the data is unwieldly, or it is initially difficult to visualize. I enjoy thinking about novel ways to get more bang for our buck. I particularly like to harness various machine learning techniques to do science, which often involves developing tools that push machine learning to become more scientific (i.e., with error analysis built in or with in depth discussion of the physical implications of the results).
 
 <p>
 One potential application of ML to astronomy is harnessing unsupervised clustering to uncover classes of objects, such as different types of kinematic maps (below).
