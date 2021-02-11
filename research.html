@@ -38,17 +38,25 @@
 
   <p><b>Galaxy Mergers: They are hard to identify</b> 
    
-I approach this problem from a unique perspective that joins simulations of galaxy mergers with observations. One way I approach this problem is through detailed isolated merger simulations that allow me to take detailed notes about how the signatures of mergers change with time. I worked with Laura Blecha at the University of Florida to create a beautiful simulation suite of merging galaxies using the SUNRISE simulations:
+<p>
+<!--I approach this problem from a unique perspective that joins simulations of galaxy mergers with observations. -->
+
+<!--One way to study mergers is using cosmological simulations to curate a collection of merging and nonmerging galaxies across a range of galaxy morphologies and redshifts. I'm working on this for the IllustrisTNG50, a state-of-the-art cosmological simulation that combines the statistical power of large volume with high spatial resolution. -->
+
+
+
+
+One way to study mergers is through detailed isolated merger simulations that allow me to take detailed notes about how the signatures of mergers change with time. I worked with Laura Blecha at the University of Florida to create a beautiful simulation suite of merging galaxies using the SUNRISE simulations:
 <p> 
 <iframe width="400" height="200" src="https://www.youtube.com/embed/431lGpe3o8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>
 From these simulations, I create mock observations to match [insert your favorite galaxy survey]. Here, I'm showing mock SDSS r-band images and mock MaNGA stellar kinematic maps:
 
-From these mock images and kinematic maps, I have developed a galaxy merger classification tool that learns to identify various different types of galaxy mergers. The statistical learning classification tool relies upon parametric and non-parametric 'predictors', which I extract from the images and kinematic maps of the merger to assign a given galaxy a probability of being in a merger. <a href="https://arxiv.org/abs/1901.01975">This is my completed paper on the imaging side of the approach,</a> and <a href="https://arxiv.org/abs/2102.02208"> this is my paper on the stellar kinematic side of the approach.</a>
+From these mock images and kinematic maps, I have developed a galaxy merger classification tool that learns to identify various different types of galaxy mergers. The statistical learning classification tool relies upon parametric and non-parametric 'predictors', which I extract from the images and kinematic maps of the merger to assign a given galaxy a probability of being in a merger. <a href="https://arxiv.org/abs/1901.01975">This is my paper on the imaging side of the approach,</a> and <a href="https://arxiv.org/abs/2102.02208"> this is my paper on the stellar kinematic side of the approach.</a>
 <img src="files/website_mock.png" width=500 class="center">
   <hr>
   <p><b>Active Galactic Nuclei: The motions of energetic gas</b> 
-
+<p>
     Supermassive black holes are one of the biggest paradoxes in the universe - not only are they one of the darkest places, but the region around them can shine bright as a quasar. Supermassive black holes that are actively accreting gas, which powers this energetic phenomenon across the electromagnetic spectrum, are known as active galactic nuclei, or AGN.
   <p>
  I focus on the kinematics of AGN, focusing on the powerful biconical outflows they can drive from their central regions. These outflows have the potential to impact their host galaxies (SMBHs live in the centers of galaxies), so I focus on modeling their energetics using an analytical MCMC approach. This technique has the advantage of providing a posterior probability of the parameters of the bicone, meaning that I can constrain both the geometry and the energetics of these AGN-driven outflows based on their optical emission lines.
@@ -65,6 +73,7 @@ From these mock images and kinematic maps, I have developed a galaxy merger clas
 I also spend a good amount of time fitting Gaussians to emission lines both to perform emission line diagnostics, such as BPT diagrams and to constrain the kinematic origin of various emission line features. <a href="https://arxiv.org/abs/1609.04018"> I created a kinematic classification for double-peaked AGN and proved that the majority were associated with outflow-dominated kinematics.</a>
 
 <p>
+<hr>
 <b>Case studies: Focusing on fascinating galaxies and AGN</b>
   Sometimes I like to work with individual galaxies. These objects are really interesting for a number of reasons; many of them have complicated interconnections between AGN-driven outflows and star formation.
 
