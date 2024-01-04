@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Elements - Spectral by HTML5 UP</title>
+		<title>Tasha Snow - Machine Learning</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Spectral</a></h1>
+						<h1><a href="index.html">Tasha Snow</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -27,10 +27,12 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="projects.html">Research Projects</a></li>
+											<li><a href="openscience.html">Open Science</a></li>
+											<li><a href="projects.html">Thermal Research</a></li>
+											<li><a href="machinelearning.html">Machine Learning</a></li>
+											<li><a href="elements.html">Photos</a></li>
+											<li><a href="elements.html">News</a></li>
 										</ul>
 									</div>
 								</li>
@@ -41,21 +43,67 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Elements</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<h2>A niche for Machine Learning in science</h2>
+							<p></p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<section>
-									<h4>Text</h4>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									<h2>Is a 'black box' useful in science?</h2>
+									<p>Despite good performance across a range of remote sensing and time series applications, machine learning methods are often considered 'black-boxes'. 
+										That is, they are often unexplainable because we do not know why/how they are making decisions to get to certain answers. Because machine 
+										learning models are often empirically-derived (data-driven) models, their main weakness is that they are often incapable of generating practical 
+										(generalizable) predictions that can be transferred to other regions or to other similar kinds of problems. In science, we want to know the 
+										underlying physics of how the world works. It is crucial to find mathematical, physics-based relationships between the predictor and response 
+										variables. These predictive equations can be generalized to predict outside of the scope of observations already made and applied to other models. 
+										Machine learning algorithms do not provide mathematical relationships between variables that can be generalized for application in other models or 
+										for a better understanding of the physics involved (Hastie, 2009). They may find certain variables more important or draw specific relationships 
+										between predictor and response variables, but often these relationships are ambiguous in the outputs or the exact relationships are unidentifiable. 
+										So is there value in an unexplainable or non-generalizable result in science?
+									
+										<b>The simplest answer is: it depends on your goal.</b> </p>
+										
+									<h2>Advantages over traditional statistical approaches</h2>
+									<p>Machine learning has the capacity to outperform more traditional statistical approaches in many classification, regression, and forecasting problems 
+										(Lary et al., 2016). Traditional methods require making many pre-assumptions about the data and its distribution such as: linearity (data can be 
+										represented as a straight line), homoscedasticity (the spread of data around the average is constant), error mean of 0 (differences between actual 
+										data and the model cancel out, having an average error of 0 and ensuring the model is unbiased and efficient), each data point is independent 
+										(individual observations are not influenced by or associated with each other), or normality (data is perfectly symmetrically distributed across a 
+										normal Gaussian bell-curve) (Lütkepohl, 2007). The user must have intimate knowledge of the data to know what test will be applicable and will have 
+										to make assumptions that do not necessarily hold up in every single situation. 
+										
+										Alternatively, machine learning makes few pre-assumptions and automatically improves with experience (Hastie, 2009; Murphy, 2012). In general, it is 
+										meant to be able to parse large amounts of data, learn from it, and then apply that knowledge to predict something in the real world. Machine learning 
+										tends to be computationally very inexpensive in comparison to traditional numerical methods. Another key advantage for using some machine learning 
+										techniques that is extremely valuable for remote sensing in particular, is that the trained model can be updated with new information as more is 
+										acquired; it can be an online learner (Zhang et al., 2017). Many similar machine learning techniques would require a completely new model to be produced 
+										from scratch when more data is ready to be added. However, some (e.g. Long-Short Term Memory) allow the user to make continuous predictions while 
+										continuously updating to a stronger, better informed model with new incoming data. Some require no parameter fine-tuning (Hochreiter and Schmidhuber, 2006). 
+										Some also generalize well, can handle sparse data, and can rapidly learn to distinguish between widely separated events that would be entirely missed by 
+										traditional models or human observation. 
+										
+										Machine learning techniques are also capable of modeling nonparametric, high dimensional, noisy, and nonlinear datasets (Lary et al., 2016). Many 
+										relationships in the real world are nonlinear and noisy. Numerical methods determine primary variable relationships and, if the model terms are calculated 
+										to explain a significant amount of the variance within the data, the model is deemed useful. However, as an example, this may mean that only 30-70% of the 
+										variance in the data is explained (depending on the degrees of freedom) and the rest of the variance, deemed as an error term, goes without expressly being 
+										modeled. Physics-based models are limited by availability of <i>a priori</i> information about the processes and the limited capacity of the modeler 
+										implementing them to identify those processes (Lütkepohl, 2007). If a modeler does not know to model a specific phenomenon, the model will not incorporate 
+										it and the model will be incomplete. Machine learning, however, can learn from and understand the relationships buried within noise to create better 
+										predictive models. The primary relationships modeled in traditional models tend to be physical phenomenon that are readily apparent and of interest at the 
+										scale of the system being modeled. The noise or chaos beyond those relationship, though, is still physically-derived phenomena that occurs somewhere 
+										between the sub-atomic and planet scale, but has been overlooked or ignored by the modeler. With enough data, a machine learning algorithm would identify 
+										a larger percentage of the relationships found in the noise than the traditional models, especially for highly complex problems like climate models. All 
+										of these traits combined mean that 'black box' machine learning technique could offer a more rapid means of understanding environmental problems without 
+										the need to have a complete theoretical grasp of the systems (Lary et al., 2016). That is, it could make better predictions because it can discern the 
+										unknown relationships from the data.  
+</p>
+									<hr />
+<!-- 									<header>
+										<h4>Heading with a Subtitle</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<header>
-										<h4>Heading with a Subtitle</h4>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
 									</header>
 									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 									<header>
@@ -355,21 +403,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 							</div>
 						</section>
-					</article>
+					</article> -->
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://twitter.com/TashaMSnow" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/tasha.m.snow/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github/tsnow03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto: tsnow@mines.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Tasha Snow</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</footer>
+					</footer> -->
 
 			</div>
 
